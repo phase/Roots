@@ -8,6 +8,9 @@ echo "Decompiling Minecraft classes"
 java -XX:+UseG1GC -jar lib/fernflower.jar "-dgs=1" "-hdc=0" "-asc=1" "-udv=0" "-din=1" "-rbr=0" "-rsy=1" "minecraft/a1.2.6-mapped.jar" "minecraft/src/" | awk '$4 ~ "minecraft" {printf "Decompiling %s\r", $4}'
 
 printf "\nExtracting sources\n"
+pushd minecraft/src/
+jar xf a1.2.6-mapped.jar
+popd
 rm -rf src
 mkdir -p src
 pushd src

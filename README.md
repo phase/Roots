@@ -4,11 +4,11 @@
 ## Setting up the Client workspace
 
 ```
-$ ./clientMappings.sh
+$ ./scripts/clientMappings.sh
 $ gradle eclipse
 # Fix LWJGL dependencies in Eclipse
 # Edit files...
-$ ./rebuildPatches.sh
+$ ./scripts/rebuildPatches.sh
 $ git ...
 ```
 
