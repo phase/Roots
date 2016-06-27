@@ -1,0 +1,26 @@
+.classpath
+.project
+.settings/
+client.sorted.srg
+minecraft/
+.gradle
+a1.2.6*
+bin
+
+# Minecraft Files
+src/armor/
+src/art/
+src/environment/
+src/font/
+src/gui/
+src/item/
+src/misc/
+src/mob/
+src/net/minecraft/
+src/terrain/
+src/title/
+src/META-INF/
+src/null
+src/pack.*
+src/particles.png
+src/terrain.png
