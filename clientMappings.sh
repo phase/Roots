@@ -10,5 +10,8 @@ java -XX:+UseG1GC -jar lib/fernflower.jar "-dgs=1" "-hdc=0" "-asc=1" "-udv=0" "-
 printf "\nExtracting sources\n"
 rm -rf src
 mkdir -p src
-cd src
+pushd src
 jar xf ../minecraft/src/a1.2.6-mapped.jar
+rm -rf com/
+rm -rf paulscode/
+popd
