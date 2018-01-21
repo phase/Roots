@@ -3,6 +3,7 @@
 .settings/
 client.sorted.srg
 minecraft/
+!patches/minecraft/
 .gradle
 a1.2.6*
 bin

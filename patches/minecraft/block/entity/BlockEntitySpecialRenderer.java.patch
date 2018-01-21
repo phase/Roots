@@ -1,0 +1,11 @@
+--- minecraft/src/net/minecraft/block/entity/BlockEntitySpecialRenderer.java	2016-06-26 17:43:56.000000000 -0700
++++ src/net/minecraft/block/entity/BlockEntitySpecialRenderer.java	2016-06-26 17:51:14.390371935 -0700
+@@ -5,7 +5,7 @@
+ import net.minecraft.render.FontRenderer;
+ import net.minecraft.render.RenderEngine;
+ 
+-public abstract class BlockEntitySpecialRenderer {
++public abstract class BlockEntitySpecialRenderer extends BlockEntity {
+    protected BlockEntityRenderer a;
+ 
+    public BlockEntitySpecialRenderer() {

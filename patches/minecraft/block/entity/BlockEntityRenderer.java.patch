@@ -1,0 +1,11 @@
+--- minecraft/src/net/minecraft/block/entity/BlockEntityRenderer.java	2016-06-26 17:43:56.000000000 -0700
++++ src/net/minecraft/block/entity/BlockEntityRenderer.java	2016-06-26 17:54:11.535374032 -0700
+@@ -15,7 +15,7 @@
+ import org.lwjgl.opengl.GL11;
+ 
+ public class BlockEntityRenderer {
+-   private Map m = new HashMap();
++   private Map<Class<? extends BlockEntity>, BlockEntitySpecialRenderer> m = new HashMap<Class<? extends BlockEntity>, BlockEntitySpecialRenderer>();
+    public static BlockEntityRenderer a = new BlockEntityRenderer();
+    private FontRenderer n;
+    public static double b;

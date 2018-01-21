@@ -1,0 +1,11 @@
+--- minecraft/src/net/minecraft/block/entity/BlockEntityMobSpawnerRenderer.java	2016-06-26 17:44:04.000000000 -0700
++++ src/net/minecraft/block/entity/BlockEntityMobSpawnerRenderer.java	2016-06-26 17:51:50.440759432 -0700
+@@ -11,7 +11,7 @@
+ import org.lwjgl.opengl.GL11;
+ 
+ public class BlockEntityMobSpawnerRenderer extends BlockEntitySpecialRenderer {
+-   private Map b = new HashMap();
++   private Map<String, Entity> b = new HashMap<String, Entity>();
+ 
+    public BlockEntityMobSpawnerRenderer() {
+    }
